@@ -10,8 +10,7 @@
   "uom",
   "type",
   "measuring_intervals",
-  "data_type",
-  "parameter_type"
+  "data_type"
  ],
  "fields": [
   {
@@ -32,7 +31,7 @@
    "fieldname": "uom",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Uom",
+   "label": "UOM",
    "options": "UOM"
   },
   {
@@ -53,17 +52,12 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Data Type"
-  },
-  {
-   "fieldname": "parameter_type",
-   "fieldtype": "Data",
-   "label": "Parameter Type"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-02-20 12:56:49.544001",
+ "modified": "2021-02-20 14:40:25.539787",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "Site Operational Parameter",

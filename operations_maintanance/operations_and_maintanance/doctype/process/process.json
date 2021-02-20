@@ -12,13 +12,15 @@
   {
    "fieldname": "process_name",
    "fieldtype": "Data",
-   "label": "Process Name",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-20 12:35:04.168684",
+ "modified": "2021-02-20 14:35:17.202423",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "Process",

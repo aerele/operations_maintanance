@@ -52,12 +52,12 @@
    "fieldname": "consumables",
    "fieldtype": "Table",
    "label": "Consumables",
-   "options": "Consumable"
+   "options": "System Consumable"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-20 14:13:21.409318",
+ "modified": "2021-02-20 14:41:23.624026",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "System",

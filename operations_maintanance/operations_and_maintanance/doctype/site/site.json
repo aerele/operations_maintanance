@@ -1,14 +1,15 @@
 {
  "actions": [],
  "autoname": "field:project_number",
- "creation": "2021-02-20 13:33:57.157449",
+ "creation": "2021-02-20 14:45:47.126642",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project_number",
-  "site_name",
   "warehouse",
+  "column_break_3",
+  "site_name",
   "systems_section",
   "process_name",
   "system",
@@ -18,15 +19,6 @@
   "operational_parameters",
   "consumables_section",
   "consumables",
-  "formulae_section",
-  "formulas",
-  "additional_resources_section",
-  "add_lab_parameter",
-  "additional_lab_parameters",
-  "add_operational_parameter",
-  "additional_operational_parameters",
-  "add_consumable",
-  "additional_consumables",
   "location_section",
   "latitude",
   "longitude",
@@ -37,25 +29,28 @@
    "fieldname": "project_number",
    "fieldtype": "Data",
    "label": "Project Number",
+   "set_only_once": 1,
    "unique": 1
   },
   {
    "fieldname": "site_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Site Name"
+   "label": "Site Name",
+   "set_only_once": 1
   },
   {
    "fieldname": "warehouse",
    "fieldtype": "Link",
    "label": "Warehouse",
-   "options": "Warehouse"
+   "options": "Warehouse",
+   "read_only": 1
   },
   {
    "collapsible": 1,
    "fieldname": "systems_section",
    "fieldtype": "Section Break",
-   "label": "System"
+   "label": "Processes and Systems"
   },
   {
    "fieldname": "process_name",
@@ -82,46 +77,28 @@
    "label": "Parameters"
   },
   {
+   "fieldname": "lab_parameters",
+   "fieldtype": "Table",
+   "label": "Lab Parameters",
+   "options": "Site Lab Parameter"
+  },
+  {
+   "fieldname": "operational_parameters",
+   "fieldtype": "Table",
+   "label": "Operational Parameters",
+   "options": "Site Operational Parameter"
+  },
+  {
    "collapsible": 1,
    "fieldname": "consumables_section",
    "fieldtype": "Section Break",
    "label": "Consumable"
   },
   {
-   "collapsible": 1,
-   "fieldname": "formulae_section",
-   "fieldtype": "Section Break",
-   "label": "Formulae"
-  },
-  {
-   "fieldname": "formulas",
+   "fieldname": "consumables",
    "fieldtype": "Table",
-   "label": "Formulas",
-   "options": "Formula Listing"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "additional_resources_section",
-   "fieldtype": "Section Break",
-   "label": "Additional Resources"
-  },
-  {
-   "default": "0",
-   "fieldname": "add_lab_parameter",
-   "fieldtype": "Check",
-   "label": "Add Lab Parameter"
-  },
-  {
-   "default": "0",
-   "fieldname": "add_operational_parameter",
-   "fieldtype": "Check",
-   "label": "Add Operational Parameter"
-  },
-  {
-   "default": "0",
-   "fieldname": "add_consumable",
-   "fieldtype": "Check",
-   "label": "Add Consumable "
+   "label": "Consumables",
+   "options": "Site Consumable"
   },
   {
    "collapsible": 1,
@@ -145,51 +122,16 @@
    "label": "Radius"
   },
   {
-   "fieldname": "lab_parameters",
-   "fieldtype": "Table",
-   "label": "Lab Parameters",
-   "options": "Site Lab Parameter"
-  },
-  {
-   "fieldname": "operational_parameters",
-   "fieldtype": "Table",
-   "label": "Operational Parameters",
-   "options": "Site Operational Parameter"
-  },
-  {
-   "fieldname": "consumables",
-   "fieldtype": "Table",
-   "label": "Consumables",
-   "options": "Site Consumable"
-  },
-  {
-   "depends_on": "eval: doc.add_lab_parameter===1;",
-   "fieldname": "additional_lab_parameters",
-   "fieldtype": "Table",
-   "label": "Additional Lab Parameters",
-   "options": "Site Lab Parameter"
-  },
-  {
-   "depends_on": "eval: doc.add_operational_parameter===1;",
-   "fieldname": "additional_operational_parameters",
-   "fieldtype": "Table",
-   "label": "Additional Operational Parameters",
-   "options": "Site Operational Parameter"
-  },
-  {
-   "depends_on": "eval: doc.add_consumable===1;",
-   "fieldname": "additional_consumables",
-   "fieldtype": "Table",
-   "label": "Additional Consumables",
-   "options": "Site Consumable"
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-20 14:16:50.761886",
+ "modified": "2021-02-20 14:53:19.702371",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
- "name": "Site Creation",
+ "name": "Site",
  "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
