@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "autoname": "field:parameter_name",
+ "creation": "2021-02-20 12:36:54.099432",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter_name",
+  "data_type",
+  "uom",
+  "parameter_type",
+  "options"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameter_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "data_type",
+   "fieldtype": "Select",
+   "label": "Data Type",
+   "options": "\nInt\nFloat\nTime\nData\nSelect\nPercentage"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "parameter_type",
+   "fieldtype": "Select",
+   "label": "Parameter Type",
+   "options": "\nLab Parameter\nOperational Parameter\nBoth"
+  },
+  {
+   "depends_on": "eval: doc.data_type===\"Select\";",
+   "fieldname": "options",
+   "fieldtype": "Long Text",
+   "label": "Options"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-02-20 12:36:54.099432",
+ "modified_by": "Administrator",
+ "module": "Operations and Maintanance",
+ "name": "Parameter",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}

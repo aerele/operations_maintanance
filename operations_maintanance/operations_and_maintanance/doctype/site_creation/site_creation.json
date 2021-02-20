@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "autoname": "field:project_number",
+ "creation": "2021-02-20 13:33:57.157449",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_number",
+  "site_name",
+  "warehouse",
+  "systems_section",
+  "process_name",
+  "system",
+  "get_parameter",
+  "parameters_section",
+  "lab_parameter",
+  "operational_parameter",
+  "consumables_section",
+  "consumable",
+  "formulae_section",
+  "formulas",
+  "additional_resources_section",
+  "add_lab_parameter",
+  "additional_parameter",
+  "add_operational_parameter",
+  "additional_operational_parameter",
+  "add_consumable",
+  "additional_consumable",
+  "location_section",
+  "latitude",
+  "longitude",
+  "radius"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_number",
+   "fieldtype": "Data",
+   "label": "Project Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "systems_section",
+   "fieldtype": "Section Break",
+   "label": "Systems"
+  },
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Table MultiSelect",
+   "label": "Process Name",
+   "options": "Process Listing"
+  },
+  {
+   "fieldname": "system",
+   "fieldtype": "Table",
+   "label": "System",
+   "options": "System Listing"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_parameter",
+   "fieldtype": "Button",
+   "label": "Get Parameter and Consumable"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "parameters_section",
+   "fieldtype": "Section Break",
+   "label": "Parameters"
+  },
+  {
+   "fieldname": "lab_parameter",
+   "fieldtype": "Table",
+   "label": "Lab Parameter ",
+   "options": "Parameter Listing"
+  },
+  {
+   "fieldname": "operational_parameter",
+   "fieldtype": "Table",
+   "label": "Operational Parameter",
+   "options": "Operational Parameter Listing"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "consumables_section",
+   "fieldtype": "Section Break",
+   "label": "Consumables"
+  },
+  {
+   "fieldname": "consumable",
+   "fieldtype": "Table",
+   "label": "Consumable",
+   "options": "Consumable Listing"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "formulae_section",
+   "fieldtype": "Section Break",
+   "label": "Formulae"
+  },
+  {
+   "fieldname": "formulas",
+   "fieldtype": "Table",
+   "label": "Formulas",
+   "options": "Formula Listing"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "additional_resources_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Resources"
+  },
+  {
+   "default": "0",
+   "fieldname": "add_lab_parameter",
+   "fieldtype": "Check",
+   "label": "Add Lab Parameter"
+  },
+  {
+   "depends_on": "eval: doc.add_lab_parameter===1;",
+   "fieldname": "additional_parameter",
+   "fieldtype": "Table",
+   "label": "Additional Lab Parameter",
+   "options": "Parameter Listing"
+  },
+  {
+   "default": "0",
+   "fieldname": "add_operational_parameter",
+   "fieldtype": "Check",
+   "label": "Add Operational Parameter"
+  },
+  {
+   "depends_on": "eval: doc.add_operational_parameter===1;",
+   "fieldname": "additional_operational_parameter",
+   "fieldtype": "Table",
+   "label": "Additional Operational Parameter",
+   "options": "Operational Parameter Listing"
+  },
+  {
+   "default": "0",
+   "fieldname": "add_consumable",
+   "fieldtype": "Check",
+   "label": "Add Consumable "
+  },
+  {
+   "depends_on": "eval: doc.add_consumable===1;",
+   "fieldname": "additional_consumable",
+   "fieldtype": "Table",
+   "label": "Additional Consumable",
+   "options": "Consumable Listing"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "radius",
+   "fieldtype": "Data",
+   "label": "Radius"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-02-20 13:33:57.157449",
+ "modified_by": "Administrator",
+ "module": "Operations and Maintanance",
+ "name": "Site Creation",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "site_name",
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
