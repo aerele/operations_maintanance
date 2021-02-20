@@ -14,19 +14,19 @@
   "system",
   "get_parameter",
   "parameters_section",
-  "lab_parameter",
-  "operational_parameter",
+  "lab_parameters",
+  "operational_parameters",
   "consumables_section",
-  "consumable",
+  "consumables",
   "formulae_section",
   "formulas",
   "additional_resources_section",
   "add_lab_parameter",
-  "additional_parameter",
+  "additional_lab_parameters",
   "add_operational_parameter",
-  "additional_operational_parameter",
+  "additional_operational_parameters",
   "add_consumable",
-  "additional_consumable",
+  "additional_consumables",
   "location_section",
   "latitude",
   "longitude",
@@ -55,19 +55,19 @@
    "collapsible": 1,
    "fieldname": "systems_section",
    "fieldtype": "Section Break",
-   "label": "Systems"
+   "label": "System"
   },
   {
    "fieldname": "process_name",
    "fieldtype": "Table MultiSelect",
    "label": "Process Name",
-   "options": "Process Listing"
+   "options": "Site Process"
   },
   {
    "fieldname": "system",
    "fieldtype": "Table",
-   "label": "System",
-   "options": "System Listing"
+   "label": "Systems",
+   "options": "Site System"
   },
   {
    "default": "0",
@@ -82,28 +82,10 @@
    "label": "Parameters"
   },
   {
-   "fieldname": "lab_parameter",
-   "fieldtype": "Table",
-   "label": "Lab Parameter ",
-   "options": "Parameter Listing"
-  },
-  {
-   "fieldname": "operational_parameter",
-   "fieldtype": "Table",
-   "label": "Operational Parameter",
-   "options": "Operational Parameter Listing"
-  },
-  {
    "collapsible": 1,
    "fieldname": "consumables_section",
    "fieldtype": "Section Break",
-   "label": "Consumables"
-  },
-  {
-   "fieldname": "consumable",
-   "fieldtype": "Table",
-   "label": "Consumable",
-   "options": "Consumable Listing"
+   "label": "Consumable"
   },
   {
    "collapsible": 1,
@@ -130,37 +112,16 @@
    "label": "Add Lab Parameter"
   },
   {
-   "depends_on": "eval: doc.add_lab_parameter===1;",
-   "fieldname": "additional_parameter",
-   "fieldtype": "Table",
-   "label": "Additional Lab Parameter",
-   "options": "Parameter Listing"
-  },
-  {
    "default": "0",
    "fieldname": "add_operational_parameter",
    "fieldtype": "Check",
    "label": "Add Operational Parameter"
   },
   {
-   "depends_on": "eval: doc.add_operational_parameter===1;",
-   "fieldname": "additional_operational_parameter",
-   "fieldtype": "Table",
-   "label": "Additional Operational Parameter",
-   "options": "Operational Parameter Listing"
-  },
-  {
    "default": "0",
    "fieldname": "add_consumable",
    "fieldtype": "Check",
    "label": "Add Consumable "
-  },
-  {
-   "depends_on": "eval: doc.add_consumable===1;",
-   "fieldname": "additional_consumable",
-   "fieldtype": "Table",
-   "label": "Additional Consumable",
-   "options": "Consumable Listing"
   },
   {
    "collapsible": 1,
@@ -182,11 +143,50 @@
    "fieldname": "radius",
    "fieldtype": "Data",
    "label": "Radius"
+  },
+  {
+   "fieldname": "lab_parameters",
+   "fieldtype": "Table",
+   "label": "Lab Parameters",
+   "options": "Site Lab Parameter"
+  },
+  {
+   "fieldname": "operational_parameters",
+   "fieldtype": "Table",
+   "label": "Operational Parameters",
+   "options": "Site Operational Parameter"
+  },
+  {
+   "fieldname": "consumables",
+   "fieldtype": "Table",
+   "label": "Consumables",
+   "options": "Site Consumable"
+  },
+  {
+   "depends_on": "eval: doc.add_lab_parameter===1;",
+   "fieldname": "additional_lab_parameters",
+   "fieldtype": "Table",
+   "label": "Additional Lab Parameters",
+   "options": "Site Lab Parameter"
+  },
+  {
+   "depends_on": "eval: doc.add_operational_parameter===1;",
+   "fieldname": "additional_operational_parameters",
+   "fieldtype": "Table",
+   "label": "Additional Operational Parameters",
+   "options": "Site Operational Parameter"
+  },
+  {
+   "depends_on": "eval: doc.add_consumable===1;",
+   "fieldname": "additional_consumables",
+   "fieldtype": "Table",
+   "label": "Additional Consumables",
+   "options": "Site Consumable"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-20 13:33:57.157449",
+ "modified": "2021-02-20 14:16:50.761886",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "Site Creation",

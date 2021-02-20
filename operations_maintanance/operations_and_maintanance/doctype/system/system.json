@@ -40,13 +40,13 @@
    "fieldname": "lab_parameters",
    "fieldtype": "Table",
    "label": "Lab Parameters",
-   "options": "Parameter List"
+   "options": "System Lab Parameter"
   },
   {
    "fieldname": "operational_parameters",
    "fieldtype": "Table",
    "label": "Operational Parameters",
-   "options": "Operational Parameter"
+   "options": "System Operational Parameter"
   },
   {
    "fieldname": "consumables",
@@ -57,7 +57,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-20 13:14:37.542577",
+ "modified": "2021-02-20 14:13:21.409318",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "System",

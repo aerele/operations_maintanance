@@ -1,36 +1,28 @@
 {
  "actions": [],
- "creation": "2021-02-20 13:33:50.304452",
+ "creation": "2021-02-20 12:39:49.720866",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "system_name",
-  "system_running_hrs"
+  "process_name"
  ],
  "fields": [
   {
-   "fieldname": "system_name",
+   "fieldname": "process_name",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "System Name",
-   "options": "System"
-  },
-  {
-   "fieldname": "system_running_hrs",
-   "fieldtype": "Duration",
-   "hide_days": 1,
-   "in_list_view": 1,
-   "label": "System Running Hrs"
+   "label": "Process Name",
+   "options": "Process"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-02-20 13:33:50.304452",
+ "modified": "2021-02-20 12:39:49.720866",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
- "name": "System Listing",
+ "name": "Site Process",
  "owner": "Administrator",
  "permissions": [],
  "quick_entry": 1,
