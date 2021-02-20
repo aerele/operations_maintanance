@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include operations_maintanance *.css
+recursive-include operations_maintanance *.csv
+recursive-include operations_maintanance *.html
+recursive-include operations_maintanance *.ico
+recursive-include operations_maintanance *.js
+recursive-include operations_maintanance *.json
+recursive-include operations_maintanance *.md
+recursive-include operations_maintanance *.png
+recursive-include operations_maintanance *.py
+recursive-include operations_maintanance *.svg
+recursive-include operations_maintanance *.txt
+recursive-exclude operations_maintanance *.pyc
