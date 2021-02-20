@@ -10,6 +10,7 @@
  ],
  "fields": [
   {
+   "fetch_from": "item.stock_uom",
    "fieldname": "uom",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -27,7 +28,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-02-20 13:00:09.900066",
+ "modified": "2021-02-20 16:18:27.558690",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "System Consumable",
