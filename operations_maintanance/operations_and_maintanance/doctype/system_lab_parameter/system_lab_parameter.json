@@ -17,6 +17,7 @@
    "options": "Parameter"
   },
   {
+   "fetch_from": "parameter.uom",
    "fieldname": "uom",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -27,7 +28,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-02-20 12:56:00.113482",
+ "modified": "2021-02-20 16:13:01.421171",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "System Lab Parameter",
