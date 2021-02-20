@@ -18,7 +18,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Project Number",
-   "options": "Site Creation",
+   "options": "Site",
    "reqd": 1,
    "unique": 1
   },
@@ -46,7 +46,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-20 14:21:37.015240",
+ "modified": "2021-02-20 14:48:50.745251",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "Employee System Allocation",
