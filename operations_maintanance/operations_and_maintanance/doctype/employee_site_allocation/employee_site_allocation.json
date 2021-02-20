@@ -10,7 +10,7 @@
   "column_break_3",
   "site_name",
   "section_break_6",
-  "employee_site_allocation_links"
+  "links"
  ],
  "fields": [
   {
@@ -35,15 +35,15 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "employee_site_allocation_links",
+   "fieldname": "links",
    "fieldtype": "Table",
-   "label": "Employee Site Allocation Links",
+   "label": "Links",
    "options": "Employee Site Allocation Link"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-20 14:07:38.195845",
+ "modified": "2021-02-20 14:23:01.629983",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "Employee Site Allocation",
@@ -58,18 +58,6 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Site Incharge",
    "share": 1,
    "write": 1
   }

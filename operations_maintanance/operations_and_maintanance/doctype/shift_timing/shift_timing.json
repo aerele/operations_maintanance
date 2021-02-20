@@ -7,7 +7,9 @@
  "field_order": [
   "shift_name",
   "start_time",
-  "end_time"
+  "end_time",
+  "column_break_4",
+  "is_default"
  ],
  "fields": [
   {
@@ -30,12 +32,23 @@
    "fieldtype": "Time",
    "in_list_view": 1,
    "label": "End Time"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_default",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Default"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-02-20 13:21:27.365649",
+ "modified": "2021-02-20 14:28:00.921275",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "Shift Timing",

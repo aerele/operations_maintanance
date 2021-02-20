@@ -10,7 +10,7 @@
   "column_break_2",
   "site_name",
   "section_break_4",
-  "employee_system_allocation_links"
+  "links"
  ],
  "fields": [
   {
@@ -38,15 +38,15 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "employee_system_allocation_links",
+   "fieldname": "links",
    "fieldtype": "Table",
-   "label": "Employee System Allocation Links",
+   "label": "Links",
    "options": "Employee System Allocation Link"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-20 14:06:24.037186",
+ "modified": "2021-02-20 14:21:37.015240",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
  "name": "Employee System Allocation",
