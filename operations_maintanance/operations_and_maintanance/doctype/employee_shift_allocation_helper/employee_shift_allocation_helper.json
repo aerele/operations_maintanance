@@ -1,15 +1,17 @@
 {
  "actions": [],
- "autoname": "format:{site_name} - {project_number}",
- "creation": "2021-02-20 12:45:27.746478",
+ "creation": "2021-02-20 16:37:23.785015",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "project_number",
+  "from_date",
   "column_break_3",
   "site_name",
+  "to_date",
   "section_break_6",
+  "get_employee",
   "links"
  ],
  "fields": [
@@ -19,6 +21,13 @@
    "in_list_view": 1,
    "label": "Project Number",
    "options": "Site",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
    "reqd": 1
   },
   {
@@ -32,22 +41,34 @@
    "label": "Site Name"
   },
   {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
    "fieldname": "section_break_6",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_employee",
+   "fieldtype": "Button",
+   "label": "Get Employee"
   },
   {
    "fieldname": "links",
    "fieldtype": "Table",
    "label": "Links",
-   "options": "Employee Site Allocation Link"
+   "options": "Employee Shift Allocation Helper Link"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-20 17:21:28.777118",
+ "modified": "2021-02-20 17:07:43.009081",
  "modified_by": "Administrator",
  "module": "Operations and Maintanance",
- "name": "Employee Site Allocation",
+ "name": "Employee Shift Allocation Helper",
  "owner": "Administrator",
  "permissions": [
   {
