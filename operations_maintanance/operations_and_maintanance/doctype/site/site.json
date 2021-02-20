@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "autoname": "field:project_number",
+ "creation": "2021-02-20 14:45:47.126642",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_number",
+  "warehouse",
+  "column_break_3",
+  "site_name",
+  "systems_section",
+  "process_name",
+  "system",
+  "get_parameter",
+  "parameters_section",
+  "lab_parameters",
+  "operational_parameters",
+  "consumables_section",
+  "consumables",
+  "location_section",
+  "latitude",
+  "longitude",
+  "radius"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_number",
+   "fieldtype": "Data",
+   "label": "Project Number",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site Name",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "systems_section",
+   "fieldtype": "Section Break",
+   "label": "Processes and Systems"
+  },
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Table MultiSelect",
+   "label": "Process Name",
+   "options": "Site Process"
+  },
+  {
+   "fieldname": "system",
+   "fieldtype": "Table",
+   "label": "Systems",
+   "options": "Site System"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_parameter",
+   "fieldtype": "Button",
+   "label": "Get Parameter and Consumable"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "parameters_section",
+   "fieldtype": "Section Break",
+   "label": "Parameters"
+  },
+  {
+   "fieldname": "lab_parameters",
+   "fieldtype": "Table",
+   "label": "Lab Parameters",
+   "options": "Site Lab Parameter"
+  },
+  {
+   "fieldname": "operational_parameters",
+   "fieldtype": "Table",
+   "label": "Operational Parameters",
+   "options": "Site Operational Parameter"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "consumables_section",
+   "fieldtype": "Section Break",
+   "label": "Consumable"
+  },
+  {
+   "fieldname": "consumables",
+   "fieldtype": "Table",
+   "label": "Consumables",
+   "options": "Site Consumable"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "radius",
+   "fieldtype": "Data",
+   "label": "Radius"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-02-20 14:53:19.702371",
+ "modified_by": "Administrator",
+ "module": "Operations and Maintanance",
+ "name": "Site",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "site_name",
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
