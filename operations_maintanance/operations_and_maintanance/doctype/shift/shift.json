@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "autoname": "field:project_number",
+ "creation": "2021-02-20 13:22:11.449210",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_number",
+  "column_break_2",
+  "site_name",
+  "section_break_4",
+  "shift_timings"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Number",
+   "options": "Site Creation",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project_number.site_name",
+   "fieldname": "site_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shift_timings",
+   "fieldtype": "Table",
+   "label": "Shift Timings",
+   "options": "Shift Timing"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-02-20 13:31:42.641168",
+ "modified_by": "Administrator",
+ "module": "Operations and Maintanance",
+ "name": "Shift",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

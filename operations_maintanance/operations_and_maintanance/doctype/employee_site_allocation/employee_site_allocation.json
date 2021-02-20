@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "autoname": "format:{site_name} - {project_number}",
+ "creation": "2021-02-20 12:45:27.746478",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_number",
+  "column_break_3",
+  "site_name",
+  "section_break_6",
+  "employee_site_allocation_links"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Number",
+   "options": "Site Creation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Read Only",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_site_allocation_links",
+   "fieldtype": "Table",
+   "label": "Employee Site Allocation Links",
+   "options": "Employee Site Allocation Link"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-02-20 14:07:38.195845",
+ "modified_by": "Administrator",
+ "module": "Operations and Maintanance",
+ "name": "Employee Site Allocation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Site Incharge",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
